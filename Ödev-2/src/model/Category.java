@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Category {
     private String categoryName;
-    private List<String> filmList = new ArrayList<>(); 
+    private List<Film> filmList = new ArrayList<>(); 
 
     private int filmCount = 0;
 
@@ -25,12 +25,12 @@ public class Category {
         this.filmCount++;
     }
 
-    public List<String> getFilmList() {
-        return filmList;
+    public List<Film> getFilmList() {
+        return this.filmList;
     }
 
     public void addFilm(Film film){
-        filmList.add(film.toString());
+        this.filmList.add(film);
     }
 
     @Override

@@ -1,5 +1,6 @@
 package model;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -14,9 +15,9 @@ public class Film {
 
     private String coStar;
 
-    private Category categories;
+    private ArrayList<Category> categories = new ArrayList<>();
 
-    private String[] platforms;
+    private  ArrayList<String> platforms = new ArrayList<>();
 
     private double imdbScore;
 
@@ -71,21 +72,13 @@ public class Film {
         this.coStar = coStar;
     }
 
-    public Category getCategories() {
-        return categories;
+    public void setCategories(Category category) {
+        this.categories.add(category);
+        category.setFilmCount();
     }
 
-    public void setCategories(Category categories) {
-        this.categories = categories;
-        this.categories.setFilmCount();
-    }
-
-    public String[] getPlatforms() {
-        return platforms;
-    }
-
-    public void setPlatforms(String[] platforms) {
-        this.platforms = platforms;
+    public void setPlatforms(String platform) {
+        this.platforms.add(platform);
     }
 
     public double getImdbScore() {
@@ -107,7 +100,7 @@ public class Film {
     @Override
     public String toString() {
         return "Film: \n Name= " + filmName + "\n Publish year= " + year + "\n Director= " + director + "\n Star= " + star
-                + "\n Co-Star= " + coStar + "\n Categories= " + categories.toString() + "\n Platforms= " + Arrays.toString(platforms)
+                + "\n Co-Star= " + coStar + "\n Categories= " + categories.toString() + "\n Platforms= " + platforms.toString()
                 + "\n Imdb-Score= " + imdbScore + "\n Sessions= " + Arrays.toString(sessions);
     }
 
