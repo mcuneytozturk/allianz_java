@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/allianz_java.iml" filepath="$PROJECT_DIR$/.idea/allianz_java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dancestudio/dancestudio.iml" filepath="$PROJECT_DIR$/dancestudio/dancestudio.iml" />
+      <module fileurl="file://$PROJECT_DIR$/odev_1/odev_1.iml" filepath="$PROJECT_DIR$/odev_1/odev_1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/odev_2/odev_2.iml" filepath="$PROJECT_DIR$/odev_2/odev_2.iml" />
+    </modules>
+  </component>
+</project>
