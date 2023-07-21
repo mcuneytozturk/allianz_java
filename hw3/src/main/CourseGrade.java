@@ -54,10 +54,10 @@ public class CourseGrade {
     }
 
     public void setCourseCode(int courseCode) {
-        if (courseCode > 100 && courseCode < 590) {
+        if (courseCode > 100 && courseCode < 599) {
             this.courseCode = courseCode;
         } else {
-            System.err.println("Ders kodu 101 ile 590 arasında bir değer almalıdır!*");
+            System.err.println("Ders kodu 101 ile 599 arasında bir değer almalıdır!*");
         }
     }
 
