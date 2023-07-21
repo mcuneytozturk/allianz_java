@@ -9,8 +9,9 @@ import java.math.BigDecimal;
 import java.util.ArrayList;
 
 public class InsuranceCompanyService {
-    public InsuranceCompany createInsuranceCompany(String taxOffice, String taxNumber, String address, BigDecimal commision){
+    public InsuranceCompany createInsuranceCompany(String name, String taxOffice, String address, String taxNumber,  BigDecimal commision){
         InsuranceCompany insuranceCompany = new InsuranceCompany();
+        insuranceCompany.setName(name);
         insuranceCompany.setTaxOffice(taxOffice);
         insuranceCompany.setTaxNumber(taxNumber);;
         insuranceCompany.setAddress(address);

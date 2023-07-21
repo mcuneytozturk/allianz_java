@@ -5,7 +5,6 @@ import java.util.ArrayList;
 public class InsuranceRequest {
     private ArrayList<Proposal> proposalList;
     private Vehicle vehicle;
-    private Policy policy;
 
     public InsuranceRequest() {
     }
@@ -26,11 +25,4 @@ public class InsuranceRequest {
         this.vehicle = vehicle;
     }
 
-    public Policy getPolicy() {
-        return policy;
-    }
-
-    public void setPolicy(Policy policy) {
-        this.policy = policy;
-    }
 }

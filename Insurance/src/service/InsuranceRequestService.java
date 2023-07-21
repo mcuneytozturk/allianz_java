@@ -1,16 +1,15 @@
 package service;
 
+import model.Agency;
 import model.InsuranceRequest;
-import model.Policy;
 import model.Proposal;
 import model.Vehicle;
 
 import java.util.ArrayList;
 
 public class InsuranceRequestService {
-    public InsuranceRequest createInsuranceRequest(Vehicle vehicle, Policy policy){
+    public InsuranceRequest createInsuranceRequest(Vehicle vehicle){
         InsuranceRequest insuranceRequest = new InsuranceRequest();
-        insuranceRequest.setPolicy(policy);
         insuranceRequest.setVehicle(vehicle);
         return insuranceRequest;
     }
