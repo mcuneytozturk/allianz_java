@@ -4,30 +4,33 @@ import main.Transcript;
 import util.Grade;
 import util.GradeTest;
 
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
+
+        //
         GradeTest grades = new GradeTest();
         grades.values();
 
         CourseGrade courseGrade1 = new CourseGrade();
-        courseGrade1.setCourseDepartment("MAT1");
-        courseGrade1.setCourseCode(102);
+        courseGrade1.setCourseDepartment("MAT132");
+        courseGrade1.setCourseCode(101);
         courseGrade1.setCourseCredit(4);
         courseGrade1.setGradeTaken(3.5);
 
-        System.out.println(courseGrade1);
+        CourseGrade courseGrade2 = new CourseGrade("MBG2", 580);
+        courseGrade2.setGradeTaken(Grade.D);
+        courseGrade2.setCourseCredit(4);
 
-        CourseGrade courseGrade2 = new CourseGrade();
-        courseGrade2.setGradeTaken(Grade.B);
+        CourseGrade courseGrade3 = new CourseGrade("CHeM");
+        courseGrade3.setCourseCode(611);
+        courseGrade3.setGradeTaken(Grade.A);
+        courseGrade3.setCourseCredit(3);
 
-        System.out.println(courseGrade2);
 
         Transcript transcript = new Transcript(1112234);
-
         transcript.addCourseTaken(courseGrade1);
         transcript.addCourseTaken(courseGrade2);
+        transcript.addCourseTaken(courseGrade3);
 
         System.out.println(transcript);
 
