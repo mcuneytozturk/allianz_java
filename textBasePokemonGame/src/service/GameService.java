@@ -11,6 +11,13 @@ public class GameService {
     WeatherService weatherService = new WeatherService();
     LoadService loadService = new LoadService();
 
+    /*ödevde ana savaş bu method üzerinden işliyor
+            - önce her bir choice metodu için weatherService ile yeni bir weather seçiliyor,
+            - yine weather servisinden decreaseDmg fonksiyonu çağrılarak oyundaki tüm pokemonların dmg'i yeniden belirleniyor
+            - saldırı, pokemon özel gücü ve karakter özel gücü ile mi saldıralacağı soruluyor
+            - 
+
+     */
     public void choice(Scanner sc, Player player1, Player player2) {
         Weather weather = weatherService.createWeather();
         weatherService.decreaseDmgs(loadService, weather);
