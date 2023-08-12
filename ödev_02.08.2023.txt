@@ -1,0 +1,26 @@
+proje yapıyoruz
+projede pokemonları, karakterleri ve arenaları veritabanına kaydetmek istiyoruz
+
+update yapmıyoruz. 
+
+sadece post method'la create ve get method'la çekme
+
+amaç database'e veri ekleme
+karakterlere pokemon ekleme yok!!
+sadece oyun tasarlama ve veritabanı oluşturma yapılıyor.
+
+
+ekstra olarak api isteniyor
+*pokemon
+** pokemon adı + seni seçtim denildiğinde pokemon objesi girilcek
+-örnek- api'a "pikachu seni seçtim" string'i gönderildiğinde pikachu objesi dönderilsin.
+
+*stadyum
+**stadyum listeleme stadyum ekleme 
+**stadyum ismi containswWith
+
+*karakter
+*oyundaki karakter listeleme
+
+**karakter ve pokemon adı girildiğinde karakter ve pokemon objesi geri döndürülsün
+
